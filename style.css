@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.card-back, .card-front {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Blue);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.star-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color:rgb(53, 62, 75);
+    border-radius: 50%;
+}
+
+.star-container img{
+    width: 40%;
+}
+
+h1 { 
+    color: white;
+    font-size: 1.7rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.card-front p,
+.card-back .appreciation {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 400;
+    color: var(--Light-Grey);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+li {
+    color: var(--Medium-Grey);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.item-container {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    background-color: rgb(53, 62, 75);
+}
+
+.item-container:hover li {
+    color: white;
+}
+
+.item-container:hover {
+    color: white !important;
+    cursor: pointer !important;
+    background-color: var(--Orange);
+}
+
+.item-container:focus li {
+    color: white;
+}
+
+.item-container:focus {
+    background-color: var(--Light-Grey);
+    outline: none;
+}
+
+button {
+    background-color: var(--Orange);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+
+
+/* --- Rating Card State End--- */
+
+
+/* ---Thank You State --- */
+
+.hidden {
+    display: none !important;
+}
+
+.card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom,hsl(212, 18%, 14%),hsl(220, 16%, 11%));
+    gap: 2rem;
+    width: 25rem;
+    /* transform: rotateY(180deg); */
+} 
+
+.card-back .appreciation {
+    text-align: center;
+}
+
+.card-back .selection-info {
+    background-color: hsl(213, 19%, 23%);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+}
+
+.card-back .selection-info p,
+#selected-rating {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--Orange);
+    text-align: center;
+}   
+
+.card-back h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    text-align: center
+}
+
+/* ----Footer---- */
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: var(--Orange) !important;
+    font-size: 16px;
+    text-underline-offset: 0.5rem;
+}
+
+.attribution a:visited {
+    color: white;
+}
+
+/* =========================================== */
+/* -----Desktop----- */
+@media (min-width: 768px) {
+
+    .card-front, .card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 25rem;
+        position: relative;
+    }
+
+    .star-container {
+        position: relative;
+        right: 150px;
+    }
+    
+    .star-container img{
+        width: 40%;
+    }
+    
+    h1 { 
+        color: white;
+        font-size: 1.7rem;
+        text-align: left;
+        font-weight: 700;
+        position: relative;
+        right: 75px;
+    }
+
+    .card-front p {
+        color: white;
+        font-size: 1rem;
+        text-align: left;
+        font-weight: 400;
+        color: var(--Light-Grey);
+    }
+
+}

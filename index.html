@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    
+        <!-- Rating state start -->
+        <div class="card-front">
+          <div class="star-container">
+            <img src="./images/icon-star.svg" alt="Star">
+          </div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
+            </p>
+
+            <ul class="number-rating">
+              <div class="item-container"  id="item1" tabindex="1">
+                <li class="item" tabindex="2">1</li>
+              </div>
+              <div class="item-container"  id="item2" tabindex="3">
+                <li class="item">2</li>
+              </div>
+              <div class="item-container" id="item3"  tabindex="4">
+                <li class="item">3</li>
+              </div>
+              <div class="item-container" id="item4"  tabindex="5">
+                <li class="item">4</li>
+              </div>
+              <div class="item-container" id="item5"  tabindex="6">
+                <li class="item">5</li>
+              </div>
+            
+            </ul>
+            <div class="btn" >
+              <button id="submit">Submit</button>
+            </div>
+          </div>
+
+          <!-- Rating state end -->
+      <!-- Thank you state start -->
+        <div class="card-back hidden">
+          <div class="hero-img">
+            <img src="./images/illustration-thank-you.svg" alt="Thank you">
+          </div>
+          <div class="selection-info">
+            <p>You selected <span id="selected-rating"></span> out of 5
+            </p>
+          </div>
+          <h2>Thank you!</h2>
+          <p class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+        
+            <div class="btn">
+              <button id="rate-again">Refresh</button>
+            </div>
+        </div>
+        <!-- Thank you state end -->
+        </div> 
+      
+        
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ioddgamers">Adegbamigbe Tolulope</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
