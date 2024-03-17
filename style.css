@@ -137,6 +137,55 @@ button:hover {
 
 /* --- Rating Card State End--- */
 
+/* Toggle Start */
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.switch-container p{
+    color: var(--Orange);
+    text-transform: uppercase;
+}
+
+.toggler {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+
+.toggler::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(16, 27, 47);
+    top: 1px;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+.checkbox:checked + .toggler::after {
+    left: 28px;
+    background-color: rgb(243, 247, 254);
+}
+
+.checkbox:checked + .toggler {
+    background-color: rgb(16, 27, 47);
+}
+
+.checkbox {
+    display: none;
+}
+
+/* Toggle End */
 
 /* ---Thank You State --- */
 
@@ -201,6 +250,30 @@ button:hover {
 }
 
 .attribution a:visited {
+    color: white;
+}
+
+/* ---Light Mode---*/
+
+.light-mode-body {
+    background-color: var(--white);
+}
+
+.light-mode-container {
+    background-color: #f0ffff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.light-mode-header {
+    color: var(--Very-Dark-Blue);
+}
+
+.light-mode-button {
+    background-color: var(--Orange);
+}
+
+.light-mode-button:hover {
+    background-color: var(--Very-Dark-Blue);
     color: white;
 }
 
