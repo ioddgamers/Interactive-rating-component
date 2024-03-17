@@ -137,6 +137,7 @@ button:hover {
 
 /* --- Rating Card State End--- */
 
+
 /* Toggle Start */
 .switch-container {
     display: flex;
@@ -277,6 +278,14 @@ button:hover {
     color: white;
 }
 
+.light-mode-attribution {
+    text-decoration: none;
+    color: var(--Dark-Blue);
+}
+
+.light-mode-attribution a:visited {
+    color: var(--Dark-Blue);
+}
 /* =========================================== */
 /* -----Desktop----- */
 @media (min-width: 768px) {
