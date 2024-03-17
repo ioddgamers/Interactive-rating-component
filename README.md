@@ -32,3 +32,9 @@ Your users should be able to:
 ## Desktop thank you state
 
 ![desktop-thank-you-state](https://github.com/ioddgamers/Interactive-rating-component/assets/25953991/5997dd95-a182-42a0-a7d6-e24a69f8487f)
+
+## Update
+- I decided to challenge myself by adding a dark-light mode functionality to this project using JS and CSS, so far, I got it working but only on the front of the card component.
+
+## Live Page
+https://ioddgamers.github.io/Interactive-rating-component/
