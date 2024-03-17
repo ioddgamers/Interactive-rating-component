@@ -10,6 +10,8 @@ const rating3 = document.getElementById('item3');
 const rating4 = document.getElementById('item4');
 const rating5 = document.getElementById('item5');
 const toggleSwitch = document.querySelector('.toggler');
+const attribution = document.querySelector('.attribution');
+const link = document.querySelectorAll('.link');
 const ratingArray = [rating1, rating2, rating3, rating4, rating5];
 
 let selectedValue = null;
@@ -47,5 +49,7 @@ function switchMode() {
     // thanksCardContainer.classList.toggle('light-mode-container');
     submitButton.classList.toggle('light-mode-button');
     headerOne.classList.toggle('light-mode-header');
+    attribution.classList.toggle('light-mode-attribution');
+    link.classList.toggle('light-mode-attribution');
 }
 
